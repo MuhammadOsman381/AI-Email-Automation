@@ -12,6 +12,7 @@ from typing import Optional
 import uuid
 import base64
 from app.helpers.mails import send_mail
+from fastapi.responses import Response
 
 router = APIRouter(prefix="/api/mails", tags=["Mails"])
 
@@ -57,7 +58,7 @@ async def compose_mail(
         email_id = str(uuid.uuid4())
 
         tracking_pixel = f'''
-        <img src="http://localhost:8000/api/mails/track/{email_id}"
+        <img src="https://ai-email-automation-1od6.onrender.com/api/mails/track/{email_id}"
         width="1"
         height="1"
         style="display:none;" />
