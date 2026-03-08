@@ -15,7 +15,15 @@
 # CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 
-FROM python:3.9-slim
+FROM ubuntu
+RUN apt-get update -y
+RUN apt-get install -y python3 python3-pip
+RUN apt-get update -y
+
+
+
+
+
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
