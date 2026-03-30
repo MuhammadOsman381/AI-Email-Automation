@@ -42,6 +42,37 @@
 }
 
 
+/* OUTER editor container */
+.ck.ck-editor {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 10px !important;
+}
+
+/* TOOLBAR border */
+.ck.ck-toolbar {
+  border: none !important;
+  border-bottom: 1px solid #eee !important;
+  border-radius: 10px 10px 0 0 !important;
+}
+
+/* EDITABLE AREA border (MOST IMPORTANT) */
+.ck.ck-editor__main > .ck-editor__editable {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Sometimes CK adds focus border */
+.ck-focused {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ck-editor__editable {
+  min-height: 400px !important;
+}
+
+
 /* Remove provider default border */
 .rsw-provider-reset {
   border: none !important;
@@ -54,3 +85,44 @@
   border: none !important;
   box-shadow: none !important;
 }
+
+
+
+/* tiptap editor basic styles */
+.ProseMirror {
+  outline: none;
+}
+
+.ProseMirror h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.ProseMirror h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.ProseMirror h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.ProseMirror ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.ProseMirror ol {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.ProseMirror blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 10px;
+  color: gray;
+}
+
+
+

@@ -133,7 +133,6 @@ async def send_mail(
     msg.add_alternative(body, subtype="html")
     if file:
         content = await file.read()
-
         msg.add_attachment(
             content,
             maintype="application",

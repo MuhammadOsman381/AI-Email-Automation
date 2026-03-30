@@ -7,6 +7,7 @@ async def lifespan(_):
         modules={
             "models": [
                 "app.models.email",
+                "app.models.sent_email",
             ]
         },
     )
